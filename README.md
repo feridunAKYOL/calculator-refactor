@@ -11,7 +11,7 @@ We have some targets mentioned below by doing such a project:
 
 ### TECHNOLOGIES
 - HTML5
-- CSS3
+- CSS3  
 -javascript :muscle:
 - Bootstrap
 ### SUMMARY OF THE PROJECT
