@@ -12,7 +12,7 @@ We have some targets mentioned below by doing such a project:
 ### TECHNOLOGIES
 - HTML5
 - CSS3  
--javascript :muscle:
+- javascript :muscle:
 - Bootstrap
 ### SUMMARY OF THE PROJECT
 In this projects I have started to learn how to use `javascript`. We again used `Branching`.  
