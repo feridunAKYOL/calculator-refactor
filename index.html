@@ -1,7 +1,10 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- this script is to help evaluate your deployed project -->
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
@@ -12,21 +15,21 @@
   <body>
   <div class="container">
     <div class="jumbotron ">
-      <div>VERY SIMPLE CALCULATOR</div>
-      <form class=" container">
-        first Number: <input type="text" placeholder="enter the first number" aria-label="enter the first number" id="firstNumber">
-        second Number: <input  type="text" placeholder="enter the second number" aria-label="enter the second number" id="secondNumber">
-        <div>
-        <select>
+      <div class="h1 font-weight-bold text-center">VERY SIMPLE CALCULATOR</div>
+      <form class=" container col-4">
+        first Number: <input class="form-control" type="text" placeholder="enter the first number" aria-label="enter the first number" id="firstNumber">
+        second Number: <input class="form-control" type="text" placeholder="enter the second number" aria-label="enter the second number" id="secondNumber">
+        <div class="row col-6 col-form-label-lg">
+        <select class="column col-12 form-control-lg border border-secondary rounded bg-transparent" id="operator">
           <option value="add">Add</option>
           <option value="min">Minus</option>
           <option value="div">Divide</option>
           <option value="mult">Multiply</option>
         </select>
         </div> 
-        <button type="button"> Calculate</button>
+        <button type="button" id="calcButton" class="row col-6 form-control-lg border border-secondary rounded bg-info text-white"> Calculate</button>
       </form>
-      <div></div> 
+      <div id="result" class="border border-info bg-light text-center display-3 text-success h-100 "></div> 
     </div> 
   </div>
   </body>
