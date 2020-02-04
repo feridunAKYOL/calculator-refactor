@@ -1,12 +1,18 @@
-function calculateHandler(event) {
-  // read & process user input from event
+function calculator() {
+  var a= parseInt(document.querySelector('#firstNumber').value);
+  var b= parseInt(document.querySelector('#secondNumber').value);
+  var op = document.querySelector('#operator').value;
 
-  // pass user input through core logic
+  var calculate;
 
-  // render output to DOM for user
-
-  // log user action for developers
-
-  // return true for the browser
-  return true;
+  if (op == 'add'){
+    calculate = a + b;
+  } else if (op == 'min'){
+    calculate = a - b;
+  } else if (op == 'div'){
+    calculate = a / b;
+  } else if (op == 'mult'){
+    calculate = a * b;
+  }
+  document.querySelector('#result').innerHTML = calculate;
 }
