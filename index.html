@@ -6,11 +6,28 @@
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
   <script src='./dependencies/testing.js'></script>
-
+  <title>Primitive Calculator</title>
+  <script src="scripts/handler.js"></script>
 </head>
-
-<body>
-
-</body>
-
+  <body>
+  <div class="container">
+    <div class="jumbotron ">
+      <div>VERY SIMPLE CALCULATOR</div>
+      <form class=" container">
+        first Number: <input type="text" placeholder="enter the first number" aria-label="enter the first number" id="firstNumber">
+        second Number: <input  type="text" placeholder="enter the second number" aria-label="enter the second number" id="secondNumber">
+        <div>
+        <select>
+          <option value="add">Add</option>
+          <option value="min">Minus</option>
+          <option value="div">Divide</option>
+          <option value="mult">Multiply</option>
+        </select>
+        </div> 
+        <button type="button"> Calculate</button>
+      </form>
+      <div></div> 
+    </div> 
+  </div>
+  </body>
 </html>
