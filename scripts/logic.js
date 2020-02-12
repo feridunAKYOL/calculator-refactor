@@ -31,27 +31,23 @@ function doMath(operation, a, b) {
   if (typeof operation !== 'string') {
     throw new Error('operation should be a string');
   }
-  else if (typeof a !== 'number') {
+  if (typeof a !== 'number') {
     throw new Error('a should be a number');
   }
-  else if (typeof b !== 'number') {
+  if (typeof b !== 'number') {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
 
   
-    var a= parseInt(document.querySelector('#firstNumber').value);
-    var b= parseInt(document.querySelector('#secondNumber').value);
-    var op = document.querySelector('#operator').value;
-
-     
-    else if (op == 'add'){
+        
+    if (op == 'add'){
       calculate = a + b;
-    } else if (op == 'min'){
+    } if (op == 'min'){
       calculate = a - b;
-    } else if (op == 'div'){
+    } if (op == 'div'){
       calculate = a / b;
-    } else if (op == 'mult'){
+    } if (op == 'mult'){
       calculate = a * b;
     }
 
