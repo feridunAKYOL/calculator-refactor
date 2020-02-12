@@ -1,8 +1,8 @@
 function calculator(event) {
 
   // read & process user input from event
-  let a= parseInt(document.querySelector('#firstNumber').value);
-  let b= parseInt(document.querySelector('#secondNumber').value);
+  let a= Number(document.querySelector('#firstNumber').value);
+  let b= Number(document.querySelector('#secondNumber').value);
   let operation = document.querySelector('#operator').value;
 
 
