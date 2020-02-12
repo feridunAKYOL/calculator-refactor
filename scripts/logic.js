@@ -47,7 +47,7 @@ function doMath(operation, a, b) {
   } if (operation === 'mult'){
       calculate = a * b;
     }
-
+  return calculate;
    
   }
 testing(doMath, doMathTests);
