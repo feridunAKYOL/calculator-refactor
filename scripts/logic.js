@@ -40,11 +40,11 @@ function doMath(operation, a, b) {
   // write your code below this comment:
   if (operation === 'add'){
      calculate = a + b;
-  } if (operation === 'min'){
+  } else if (operation === 'min'){
       calculate = a - b;
-  } if (operation == 'div'){
+  } else if (operation == 'div'){
       calculate = a / b;
-  } if (operation === 'mult'){
+  } else if (operation === 'mult'){
       calculate = a * b;
     }
   return calculate;
