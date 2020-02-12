@@ -57,6 +57,6 @@ function doMath(operation, a, b) {
       calculate = a * b;
     }
 
-    document.querySelector('#result').innerHTML = calculate;
+   
   }
 testing(doMath, doMathTests);
