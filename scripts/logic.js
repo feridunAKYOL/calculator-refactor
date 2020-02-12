@@ -31,23 +31,21 @@ function doMath(operation, a, b) {
   if (typeof operation !== 'string') {
     throw new Error('operation should be a string');
   }
-  if (typeof a !== 'number') {
+  else if (typeof a !== 'number') {
     throw new Error('a should be a number');
   }
-  if (typeof b !== 'number') {
+  else if (typeof b !== 'number') {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
 
-  function calculator() {
-
+  
     var a= parseInt(document.querySelector('#firstNumber').value);
     var b= parseInt(document.querySelector('#secondNumber').value);
     var op = document.querySelector('#operator').value;
 
-    var calculate;
-  
-    if (op == 'add'){
+     
+    else if (op == 'add'){
       calculate = a + b;
     } else if (op == 'min'){
       calculate = a - b;
