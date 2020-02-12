@@ -7,18 +7,7 @@ function calculator() {
 
 
   // pass user input through core logic
-  var calculate;
-
-  if (op == 'add'){
-    calculate = a + b;
-  } else if (op == 'min'){
-    calculate = a - b;
-  } else if (op == 'div'){
-    calculate = a / b;
-  } else if (op == 'mult'){
-    calculate = a * b;
-  }
-
+  
 
   // render output to DOM for user
   document.querySelector('#result').innerHTML = calculate;
