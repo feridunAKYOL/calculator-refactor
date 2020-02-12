@@ -7,7 +7,7 @@ function calculator() {
 
 
   // pass user input through core logic
-  
+  let calculate= domath
 
   // render output to DOM for user
   document.querySelector('#result').innerHTML = calculate;
