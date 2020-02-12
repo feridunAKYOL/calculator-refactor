@@ -1,4 +1,4 @@
-function calculator() {
+function calculator(event) {
 
   // read & process user input from event
   let a= parseInt(document.querySelector('#firstNumber').value);
