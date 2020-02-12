@@ -38,16 +38,13 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-
-  
-        
-    if (op == 'add'){
-      calculate = a + b;
-    } if (op == 'min'){
+  if (operation === 'add'){
+     calculate = a + b;
+  } if (operation === 'min'){
       calculate = a - b;
-    } if (op == 'div'){
+  } if (operation == 'div'){
       calculate = a / b;
-    } if (op == 'mult'){
+  } if (operation === 'mult'){
       calculate = a * b;
     }
 
