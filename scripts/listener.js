@@ -1,1 +1,3 @@
-document.getElementById('calcButton').addEventListener('click', calculator);
+
+document.getElementById('calcButton').addEventListener('click', calculateHandler);
+
