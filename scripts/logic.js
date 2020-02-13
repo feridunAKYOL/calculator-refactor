@@ -1,7 +1,3 @@
-function calculator (op,a,b){
-  
-
-}
 // test cases for your doMath function
 // these are all correct, you don't need to change them
 const doMathTests = [
