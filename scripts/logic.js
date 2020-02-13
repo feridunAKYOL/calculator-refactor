@@ -1,3 +1,7 @@
+function calculator (op,a,b){
+  
+
+}
 // test cases for your doMath function
 // these are all correct, you don't need to change them
 const doMathTests = [
@@ -25,10 +29,10 @@ const doMathTests = [
 ];
 
 // refactor the logic from the calculator tutorial into this function
-function doMath(operation, a, b) {
+function doMath(op, a, b) {
   // these if statements make sure all arguments are the correct type
   // they will throw errors if your handler passes the wrong type arguments
-  if (typeof operation !== 'string') {
+  if (typeof op !== 'string') {
     throw new Error('operation should be a string');
   }
   if (typeof a !== 'number') {
@@ -38,25 +42,17 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-
-  function calculator() {
-
-    var a= parseInt(document.querySelector('#firstNumber').value);
-    var b= parseInt(document.querySelector('#secondNumber').value);
-    var op = document.querySelector('#operator').value;
-
-    var calculate;
-  
-    if (op == 'add'){
-      calculate = a + b;
-    } else if (op == 'min'){
-      calculate = a - b;
-    } else if (op == 'div'){
-      calculate = a / b;
-    } else if (op == 'mult'){
-      calculate = a * b;
-    }
-
-    document.querySelector('#result').innerHTML = calculate;
+  if (op == 'add'){
+    calculate = a + b;
+} else if (op == 'min'){
+    calculate = a - b;
+} else if (op == 'div'){
+    calculate = a / b;
+} else if (op == 'mult'){
+    calculate = a * b;
+}
+return calculate;
+    
   }
+
 testing(doMath, doMathTests);
