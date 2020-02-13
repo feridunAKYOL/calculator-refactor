@@ -42,6 +42,7 @@ function doMath(op, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
+
   if (op == 'add'){
     calculate = a + b;
 } else if (op == 'min'){
